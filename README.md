@@ -6,7 +6,9 @@ NSTimer任务管理工具类
 Task *t = [[Task alloc] initWithTime:30 handler:^{
         NSLog(@"event");
 } ];
+
 self.taskID = t.taskID;
+
 [[TimerManager sharedManager] runTask:t];
 
 
