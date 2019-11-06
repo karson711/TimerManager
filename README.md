@@ -1,5 +1,5 @@
 # TimerManager
-/**/NSTimer任务管理工具类
+**NSTimer任务管理工具类
 
 添加任务：
 
@@ -40,8 +40,3 @@ dispatch_source_set_event_handler(self.timer, ^{
 
     NSLog(@"GCD定时器");
     
-});
-
-//激活
-
-dispatch_resume(self.timer);
