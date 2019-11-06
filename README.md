@@ -1,5 +1,6 @@
 # TimerManager
-**NSTimer任务管理工具类
+
+##NSTimer任务管理工具类
 
 添加任务：
 
@@ -18,7 +19,7 @@ self.taskID = t.taskID;
 
 -----------------------------------------------------------------------------------------------------------------------
 
-/**/CADisplayLink
+##CADisplayLink
 
 self.displayLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(linkLog)];
 
@@ -26,7 +27,7 @@ self.displayLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(
     
 -----------------------------------------------------------------------------------------------------------------------
 
-/**/GCD
+##GCD
 
 self.timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, dispatch_get_main_queue());
 
