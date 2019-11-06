@@ -19,7 +19,7 @@ self.taskID = t.taskID;
 
 -----------------------------------------------------------------------------------------------------------------------
 
-##CADisplayLink
+CADisplayLink
 
 self.displayLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(linkLog)];
 
@@ -27,7 +27,7 @@ self.displayLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(
     
 -----------------------------------------------------------------------------------------------------------------------
 
-##GCD
+GCD
 
 self.timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, dispatch_get_main_queue());
 
@@ -40,4 +40,7 @@ dispatch_source_set_timer(self.timer, dispatch_walltime(NULL, 0), 1*NSEC_PER_SEC
 dispatch_source_set_event_handler(self.timer, ^{
 
     NSLog(@"GCD定时器");
-    
+});
+
+//激活
+dispatch_resume(self.timer);
