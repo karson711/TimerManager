@@ -1,6 +1,6 @@
 # TimerManager
 
-##NSTimer任务管理工具类
+NSTimer任务管理工具类
 
 添加任务：
 
